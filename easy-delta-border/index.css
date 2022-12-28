@@ -1,0 +1,28 @@
+#app {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+}
+
+#app div {
+  width: 0;
+  height: 0;
+  border: solid 100px gainsboro;
+  border-color: transparent;
+}
+
+#app div:nth-child(1) {
+  border-top-color: purple;
+}
+
+#app div:nth-child(2) {
+  border-right-color: orange;
+}
+
+#app div:nth-child(3) {
+  border-bottom-color: green;
+}
+
+#app div:nth-child(4) {
+  border-left-color: blue;
+}
