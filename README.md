@@ -16,3 +16,12 @@
 - border: solid 100px color;
 - border-color: transparent;
 - border-top-color: red;
+
+### 2022/12/29
+
+> easy-circle-audi
+
+- position: absolute; inset: -25px;
+- ::before -> z-index: 100;
+- ::after -> z-index: 1;
+- ::after -> filter: blur(15px);
