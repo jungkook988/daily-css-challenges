@@ -25,3 +25,11 @@
 - ::before -> z-index: 100;
 - ::after -> z-index: 1;
 - ::after -> filter: blur(15px);
+
+### 2022/12/30
+
+> esay-input-colorline
+
+- animation + transition
+- background-position-x
+- background-position-y
