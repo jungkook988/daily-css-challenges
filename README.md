@@ -33,3 +33,11 @@
 - animation + transition
 - background-position-x
 - background-position-y
+
+### 2023/1/1
+
+> easy-scroll-snap
+
+- scroll-snap-type: mandatory | proximity
+- scroll-snap-align: start | center | end
+- scroll-padding: px

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./base.css">
+    <style>
+        main {
+            scroll-snap-type: y proximity;
+            /* 等滚动完当前视图内容之后再自动滚动 */
+            overflow: scroll;
+            height: 100vh;
+        }
+        section {
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-align: end;
+        }
+        /* 假如第三个部分非常长 */
+        section:nth-child(3) {
+            height: 250vh;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>页面内容1</section>
+        <section>页面内容2</section>
+        <section>页面内容3</section>
+        <section>页面内容4</section>
+    </main>
+</body>
+</html>
