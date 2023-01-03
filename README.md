@@ -41,3 +41,11 @@
 - scroll-snap-type: mandatory | proximity
 - scroll-snap-align: start | center | end
 - scroll-padding: px
+
+### 2023/1/2
+
+> easy-svg-line-animation
+
+- stroke-dasharray
+- stoke-dashoffset
+- fill
