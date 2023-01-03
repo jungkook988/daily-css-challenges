@@ -49,3 +49,12 @@
 - stroke-dasharray
 - stoke-dashoffset
 - fill
+
+### 2023/1/3
+
+> easy-svg-multiLine-animation
+
+- svg -> <symbol id="text"><text>123</text></symbol>
+- svg -> <use href="#text"></use>
+- text:nth-of-type();
+- animation-delay: -1.2s;
