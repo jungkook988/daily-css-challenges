@@ -65,3 +65,12 @@
 
 - input/type=checkbox -> input:checked
 - input:checked::before -> left: calc(100% - 36px);
+
+### 2023/1/5
+
+> easy-rotateline-login
+
+- linear-gradient(deg, $color1, $color2 ...)
+- transform-origin: bottom right;
+- animation-delay: -3s;
+- inset: 2px;
