@@ -58,3 +58,10 @@
 - svg -> <use href="#text"></use>
 - text:nth-of-type();
 - animation-delay: -1.2s;
+
+### 2023/1/4
+
+> easy-ios-switch
+
+- input/type=checkbox -> input:checked
+- input:checked::before -> left: calc(100% - 36px);

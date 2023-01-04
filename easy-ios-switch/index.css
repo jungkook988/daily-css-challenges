@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  appearance: none;
+  background-color: #bfbfbf;
+  border-radius: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+.switch:checked {
+  background-color: #1677ff;
+}
+
+.switch:checked::before {
+  left: calc(100% - 36px);
+}
