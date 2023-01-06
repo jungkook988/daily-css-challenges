@@ -74,3 +74,10 @@
 - transform-origin: bottom right;
 - animation-delay: -3s;
 - inset: 2px;
+
+### 2023/1/6
+
+> easy-musicline-loading
+
+- grid
+- animation-delay
