@@ -1,0 +1,14 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.top {
+  height: 50vh;
+}
+
+.bottom {
+  height: 50vh;
+  background: #abdadc;
+  clip-path: url(#wave);
+}

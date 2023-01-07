@@ -81,3 +81,11 @@
 
 - grid
 - animation-delay
+
+### 2023/1/7
+
+> easy-clip
+
+- border-radius
+- clip-path: polygon
+- clip-path: url(svg-id)
