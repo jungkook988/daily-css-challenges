@@ -89,3 +89,15 @@
 - border-radius
 - clip-path: polygon
 - clip-path: url(svg-id)
+
+### 2023/1/8
+
+> medium-new-year
+
+- transform-style: preserve-3d;
+- `<span style="--i: 1;">` -> transform: rotateY(calc(90deg \* var(--i)));
+- `<span data-text="text">` -> content: attr(data-text);
+- filter
+- - blur();
+- - drop-shadow();
+- -webkit-text-stroke: 3px #000; // archive
