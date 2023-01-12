@@ -116,3 +116,20 @@
 - box-shadow: inset 0 0 25px rgba(255, 255, 255, 0)
 - filter: blur(2px);
 - zoom: 0.5;
+
+### 2023/1/11
+
+> medium-typing
+
+- font-family: monospace; // 字符等宽
+- width: 1ch; // 1 字符宽度,配合 monospace 使用
+- animation: second animate steps(2, jump-none) infinite; // steps 函数
+
+```javascript
+h1.textContent.replace(/\S/g, "<span>$&</span>") // 转成span
+h1.addEventListener("animationend" e => {
+    if (e.target === document.querySelector("h1 span:last-child")) {
+        h1.classList.add("ended");
+    }
+})
+```
