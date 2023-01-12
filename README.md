@@ -108,3 +108,11 @@
 
 - filter: drop-shadow() drop-shadow() ...
 - animation: animate setp(1) infinite;
+
+### 2023/1/10
+
+> medium-bubble-animate
+
+- box-shadow: inset 0 0 25px rgba(255, 255, 255, 0)
+- filter: blur(2px);
+- zoom: 0.5;
