@@ -101,3 +101,10 @@
 - - blur();
 - - drop-shadow();
 - -webkit-text-stroke: 3px #000; // archive
+
+### 2023/1/9
+
+> medium-scan-qrcode
+
+- filter: drop-shadow() drop-shadow() ...
+- animation: animate setp(1) infinite;
