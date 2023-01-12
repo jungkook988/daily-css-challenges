@@ -124,6 +124,7 @@
 - font-family: monospace; // 字符等宽
 - width: 1ch; // 1 字符宽度,配合 monospace 使用
 - animation: second animate steps(2, jump-none) infinite; // steps 函数
+- h1.animate span // 当 h1 标签拥有 animate 样式时，span 会做出什么动作
 
 ```javascript
 h1.textContent.replace(/\S/g, "<span>$&</span>") // 转成span
@@ -132,4 +133,30 @@ h1.addEventListener("animationend" e => {
         h1.classList.add("ended");
     }
 })
+```
+
+### 2023/1/12
+
+> medium-title
+
+```javascript
+const h1 = document.querySelector("h1");
+h1.innerHTML = h1.textContent.replace(/\S/g, "<span>$&</span>"); // 转成span
+
+document.querySelectorAll("h1 > span").forEach((span, index) => {
+  span.style.setProperty("--delay", `${index * 0.1}s`); // 添加动画延时
+});
+
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    // 设置动画名变量
+    h1.style.setProperty(
+      "--animation",
+      e.target.getAttribute("data-animation")
+    );
+    h1.classList.remove("animate");
+    void h1.offsetWidth; // 强制浏览器 Reflow，否则无法点击2次
+    h1.classList.add("animate");
+  });
+});
 ```
