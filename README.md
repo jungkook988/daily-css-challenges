@@ -160,3 +160,12 @@ document.querySelectorAll("button").forEach((button) => {
   });
 });
 ```
+
+### 2023/1/13
+
+> medium-card-rotation
+
+- position: absolute;
+- transform: rotateY(180deg);
+- backface-visibility: hidden; // 隐藏背面
+- perspective: 1000px; // 设定透视深度
