@@ -169,3 +169,12 @@ document.querySelectorAll("button").forEach((button) => {
 - transform: rotateY(180deg);
 - backface-visibility: hidden; // 隐藏背面
 - perspective: 1000px; // 设定透视深度
+
+### 2023/1/14
+
+> medium-intersection-line
+
+- box-shadow: inset // 无法调整横向宽度
+- text-decoration-thickness: 0.5rem // 下划线纵向宽度，但无法实现精确
+- background-image: linear-gradient() // 可以控制 background-size
+- IntersectionObserver(entries, observer) // 可视区域判断
