@@ -183,7 +183,17 @@ document.querySelectorAll("button").forEach((button) => {
 
 > medium-moon-day-transition
 
-- -webkit-backdrop-filter: blur(100px);
-- clip-path: inset(0px 50% 0px 0px);
-- box-shadow: 160px 180px 0px cyan;
+- -webkit-backdrop-filter: blur(100px); // 背景模糊
+- clip-path: inset(0px 50% 0px 0px); // 内部切割
+- box-shadow: 160px 180px 0px cyan; // 除了这个还可以使用 inset
 - transform: translate(-160px, -180px);
+
+### 2023/1/16
+
+> medium-desktop-bar
+
+- offset = Math.abs(e.clientX - itemRect.left) / itemRect.width; // 获得鼠标在块中的百分比
+- prev.style.setProperty("--scale", 1 + scale \* Math.abs(offset - 1)); // 设置前一个块的缩放值
+- next.style.setProperty("--scale", 1 + scale \* offset); // 设置后一个块的缩放值
+- font-size: calc(6rem \* var(--scale)); // 设置表情的大小
+- top: calc((6rem _ var(--scale) - 6rem) / 2 _ -1); // 设置块的纵向位移
