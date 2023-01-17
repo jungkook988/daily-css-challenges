@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <ul class="emojis">
+      <li>👌</li>
+      <li>😒</li>
+      <li>🤬</li>
+      <li>🤔</li>
+      <li>😊</li>
+    </ul>
+    <svg viewBox="0 0 300 162">
+      <filter id="mix">
+        <feGaussianBlur
+          in="SourceGraphic"
+          result="blur"
+          stdDeviation="5"
+        ></feGaussianBlur>
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -36"
+        ></feColorMatrix>
+      </filter>
+      <g filter="url(#mix)">
+        <rect
+          width="300"
+          height="50"
+          x="0"
+          y="50"
+          rx="25"
+          fill="#e3e3e3"
+        ></rect>
+        <circle cx="40" cy="75" fill="#e3e3e3" id="pop"></circle>
+      </g>
+    </svg>
+    <script src="./index.js"></script>
+  </body>
+</html>

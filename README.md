@@ -197,3 +197,15 @@ document.querySelectorAll("button").forEach((button) => {
 - next.style.setProperty("--scale", 1 + scale \* offset); // 设置后一个块的缩放值
 - font-size: calc(6rem \* var(--scale)); // 设置表情的大小
 - top: calc((6rem _ var(--scale) - 6rem) / 2 _ -1); // 设置块的纵向位移
+
+### 2023/1/17
+
+> medium-svg-popline
+
+- `<filter></filter>` // 滤镜标签
+- `<feGaussianBlur></feGaussianBlur>` // 高斯模糊标签
+- `<feColorMatrix></feColorMatrix>` // 颜色标签
+- `<g></g>` // Group 标签
+- `<rect></rect>` // 矩形标签
+- `<circle></circle>` // 圆形标签
+- .emojis + svg #pop: r 20px; // 联动设置
