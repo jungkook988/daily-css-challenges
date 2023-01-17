@@ -175,6 +175,10 @@ document.querySelectorAll("button").forEach((button) => {
 > medium-intersection-line
 
 - box-shadow: inset // 无法调整横向宽度
-- text-decoration-thickness: 0.5rem // 下划线纵向宽度，但无法实现精确
+- text-decoration-thickness: 0.5rem // 设置下划线纵向宽度，但无法实现精确
 - background-image: linear-gradient() // 可以控制 background-size
 - IntersectionObserver(entries, observer) // 可视区域判断
+
+### 2023/1/15
+
+> medium-moon-day-transition
