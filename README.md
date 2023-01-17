@@ -182,3 +182,8 @@ document.querySelectorAll("button").forEach((button) => {
 ### 2023/1/15
 
 > medium-moon-day-transition
+
+- -webkit-backdrop-filter: blur(100px);
+- clip-path: inset(0px 50% 0px 0px);
+- box-shadow: 160px 180px 0px cyan;
+- transform: translate(-160px, -180px);
